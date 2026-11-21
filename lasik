@@ -1,0 +1,76 @@
+#-----------------------------------------------------------------------
+#          File: ~/.config/ghostty/themes/lasik
+#        Colors: https://github.com/LasikTheme/palette (palette.toml)
+#   Description: Lasik Dark theme for the Ghostty terminal,
+#                ported from https://github.com/LasikTheme/kitty
+# Compatibility: Linux, macOS (Ghostty 1.0 or newer)
+#       Version: 0.1.0
+#        Author: Aamnah
+#          Link: https://aamnah.com
+#          Date: 2026-11-21
+#       Lastmod: 2026-11-21
+#-----------------------------------------------------------------------
+#
+# Install:
+#   1. Copy this file to ~/.config/ghostty/themes/lasik
+#      (the file has no extension: its name is the theme's name)
+#   2. Add this line to ~/.config/ghostty/config:
+#        theme = lasik
+#   3. Reload the config: Ctrl+Shift+, (macOS: Cmd+Shift+,)
+#
+# Check: `ghostty +list-themes` shows "lasik" in its list.
+#
+# Common mistake: Ghostty has no inline comments. A "#" after a value
+# becomes part of the value, so every comment here is on its own line.
+
+# The text is NEUTRAL_300, not white: white on black causes a halo.
+# foreground: NEUTRAL_300 (12.58:1 on the background)
+foreground = #b7c9ff
+# background: OBSIDIAN
+background = #01030a
+
+# Selected text: NEUTRAL_200 on NEUTRAL_800 (7.24:1)
+selection-foreground = #cad8ff
+selection-background = #384058
+
+# Cursor: NEUTRAL_400, the hand-picked periwinkle (11.06:1)
+cursor-color = #a8bcfc
+# The character under the cursor: OBSIDIAN
+cursor-text = #01030a
+
+# Normal colors: step 400 of each hue
+# 0 black: NEUTRAL_800
+palette = 0=#384058
+# 1 red: RED_400
+palette = 1=#ff96a9
+# 2 green: GREEN_400
+palette = 2=#a0c38f
+# 3 yellow: YELLOW_400
+palette = 3=#cab280
+# 4 blue: BLUE_400
+palette = 4=#74bbf7
+# 5 magenta: MAUVE_400
+palette = 5=#db9cff
+# 6 cyan: SAPPHIRE_400
+palette = 6=#02bbcc
+# 7 white: NEUTRAL_300
+palette = 7=#b7c9ff
+
+# Bright colors: step 200, lighter than the normal colors
+# 8 bright black: NEUTRAL_500. Shell suggestions and git hints use
+# it, so it is 7:1 and stays readable.
+palette = 8=#8595c9
+# 9 bright red: RED_200
+palette = 9=#ffccd2
+# 10 bright green: GREEN_200
+palette = 10=#bee3ad
+# 11 bright yellow: YELLOW_200
+palette = 11=#f1d69a
+# 12 bright blue: BLUE_200
+palette = 12=#b6ddff
+# 13 bright magenta: MAUVE_200
+palette = 13=#ecceff
+# 14 bright cyan: SAPPHIRE_200
+palette = 14=#5cecfd
+# 15 bright white: NEUTRAL_200
+palette = 15=#cad8ff
